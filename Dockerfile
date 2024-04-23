@@ -3,5 +3,5 @@ WORKDIR /var/www/html
 RUN rm index.html
 RUN touch index.html
 RUN echo "Test Page for DAC" > index.html
-EXPOSE 85
+EXPOSE 80
 CMD ["apache2ctl", "-D","FOREGROUND"]
